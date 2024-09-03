@@ -1,0 +1,58 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+.locate {
+    padding: 91px 0;
+
+    &__wrraper {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 129px;
+    }
+
+    &__content__subtitle {
+        text-align: start !important;
+    }
+
+    &__content__title {
+        text-align: start !important;
+        margin-bottom: 50px;
+    }
+
+    &__content-btn {
+        max-width: 252px;
+        margin-top: 25px;
+        background: #7A9CA5;
+        padding: 23px 36px;
+        
+        text-align: center;
+        color: #FFF;
+        font-size: 14px;
+      
+        font-weight: 800;
+        line-height: 125%; /* 17.5px */
+        letter-spacing: 1.68px;
+        text-transform: uppercase;
+
+    }
+}
+
+@media (max-width: 1210px){
+    .locate{
+        &__content {
+            flex-wrap: wrap;
+            gap: 60px;
+            justify-content: center;
+        } 
+    }
+}

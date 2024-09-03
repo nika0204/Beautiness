@@ -1,0 +1,133 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.help {
+    padding: 144px 0 118px 0;
+    background-color: #fff;
+
+    &__wrapper {
+        display: flex;
+        gap: 120px;
+    }
+
+    &__subtitle {
+        margin-bottom: 9px;
+        text-align: start !important;
+    }
+
+    &__title {
+        margin-bottom: 23px;
+        text-align: start !important;
+        max-width: 435px;
+    }
+
+
+    &__text {
+        color: $black;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 175%;
+        max-width: 534px;
+        margin-bottom: 30px;
+    }
+
+    &__us {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__us-contact {
+        color: $black;
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 125%;
+    }
+
+    &__us-link {
+        color: $black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        display: flex;
+        gap: 27px;
+    }
+}
+
+@media (max-width: 1235px){
+    .help{
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .help{
+        &__info{
+            gap: 10px;
+        }
+        &__us-link{
+            font-size: 14px;
+        }
+    }
+}
+
+.forms{
+    padding: 120px 0;
+    &__text{
+        max-width: 622px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 65px;
+    }
+    &__inner{
+        max-width: 1010px;
+        margin: 0 auto;
+    }
+    &__forms{
+        
+        padding: 98px 100px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__input{
+        max-width: 810px;
+        min-height: 65px;
+        border: 1px solid $blue;
+        outline: none;
+    }
+    &__input::placeholder {
+        padding: 16px 0 16px 65px;
+
+    }
+    &__link{
+        max-width: 810px !important;
+    }
+}
+
+@media (max-width: 660px){
+    .forms{
+        &__forms{
+        
+            padding: 44px 45px;
+            
+        }
+        &__link{
+            padding: 23px 10px !important;
+        }
+    }
+}

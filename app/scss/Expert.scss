@@ -1,0 +1,91 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.manager {
+    padding: 128px 0;
+    background-color: #FFF;
+
+    &__wraper {
+        display: flex;
+        gap: 127px;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+
+    &__subtitle {
+        text-align: start !important;
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        text-align: start !important;
+        margin-bottom: 19px;
+    }
+
+
+    &__content-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__content-info {
+        display: flex;
+        gap: 34px;
+        align-items: center;
+
+    }
+
+    &__link {
+        color: $black;
+        font-family: $font-title;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -0.22px;
+    }
+
+    &__content-rezerv {
+        background-color: #7A9CA5;
+        padding: 24px 36px;
+        max-width: 252px;
+        text-align: center;
+        color: #FFF;
+        font-weight: 800;
+        line-height: 125%;
+        letter-spacing: 1.68px;
+        text-transform: uppercase;
+    }
+
+
+}
+
+@media (max-width: 1045px){
+    .manager{
+        padding: 75px 0;
+        &__wraper{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 55px;
+        }
+        &__content{
+            max-width: 533px;
+        }
+        &__content-info{
+            gap: 10px;
+        }
+        &__link{
+            font-size: 19px;
+        }
+    }
+}
