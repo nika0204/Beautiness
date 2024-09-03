@@ -1,0 +1,51 @@
+@import 'vars';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+    padding: 3.5rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(16, 16, 16) 100%);
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__logo h1 {
+        color: $main-blue;
+        font-size: 5rem;
+        font-weight: 600;
+        letter-spacing: -2.5%;
+    }
+
+    &__logo p {
+        font-size: 1.5rem;
+    }
+
+    &__wrrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    &__list {
+        display: flex;
+        font-size: 2.1rem;
+        gap: 1.7rem;
+        align-items: center;
+        font-weight: 500;
+
+    &__list img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    &__item {
+        padding: 1rem 1.8rem;
+        cursor: pointer;
+    }
+}}
